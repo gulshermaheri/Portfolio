@@ -239,6 +239,12 @@ main {
     height: 0;
     overflow: hidden;
 }
+.video-wrapper-fb {
+    position: relative;
+    padding-bottom: 40.0%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+}
 
 .video-wrapper.vertical {
     padding-bottom: 177.78%; /* 9:16 aspect ratio */
