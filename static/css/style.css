@@ -194,6 +194,21 @@ main {
     padding: 0 1rem;
 }
 
+.video-grid-fb {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 300px; /* Ensuring square format */
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+}
+
+.video-grid-fb > * {
+    aspect-ratio: 1 / 1; /* Maintaining 1:1 aspect ratio */
+}
+
 .vertical-grid {
     grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
     justify-content: center;
