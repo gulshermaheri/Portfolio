@@ -256,6 +256,9 @@ main {
 .video-info {
     padding: 1.5rem;
 }
+.video-info-fb {
+    padding: 2.5rem;
+}
 
 .video-info h4 {
     margin-bottom: 0.5rem;
