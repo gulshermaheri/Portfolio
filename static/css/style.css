@@ -241,7 +241,7 @@ main {
 }
 .video-wrapper-fb {
     position: relative;
-    padding-bottom: 20.0%; /* 16:9 aspect ratio */
+    padding-bottom: 5.0%; /* 16:9 aspect ratio */
     height: 0;
     overflow: hidden;
 }
