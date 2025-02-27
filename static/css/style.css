@@ -44,9 +44,7 @@ body {
 .nav-content {
     max-width: 90%;
     margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
 }
 
 .nav-contentmain {
