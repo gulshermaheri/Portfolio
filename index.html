@@ -15,21 +15,32 @@
 
 
 
-     <style>
+    <style>
         .image-container {
             display: flex;
             justify-content: center;
-            gap: 20px; /* Adjust spacing between images */
+            gap: 20px; /* Spacing between images */
             padding: 20px;
         }
-        .image-container img {
-            width: 300px; /* Adjust width as needed */
-            height: 200px; /* Adjust height as needed */
+        .image-box {
+            text-align: center; /* Centers title below image */
+        }
+        .image-box img {
+            width: 300px; /* Adjust width */
+            height: 200px; /* Adjust height */
             object-fit: cover; /* Ensures the image fits properly */
-            border-radius: 10px; /* Optional: Adds rounded corners */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow effect */
+            border-radius: 10px; /* Optional: Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Shadow effect */
+            display: block;
+        }
+        .image-title {
+            margin-top: 10px; /* Space between image and title */
+            font-size: 16px;
+            font-weight: bold;
+            color: #333; /* Adjust color as needed */
         }
     </style>
+    
     
 </head>
 <body>
@@ -81,16 +92,28 @@
                 <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/fd/68/5d/fd685d32-fb2f-335b-eeb4-f58523b326fc/AppIcon.png/230x0w.webp" alt="CapCut">
              </div>
 
+                <h3>My Certifications</h3>
+                
                 <div class="image-container">
-                   <img src="AfterEffectsCert.jpg" alt="Image 1">
-                   <img src="image2.jpg" alt="Image 2">
-                   <img src="image3.jpg" alt="Image 3">
-                </div>
+        <div class="image-box">
+            <img src="AfterEffectsCert.jpg" alt="AfterEffectsCert">
+            <p class="image-title">Adobe After Effects</p>
+        </div>
+        <div class="image-box">
+            <img src="image2.jpg" alt="Image 2">
+            <p class="image-title">Title 2</p>
+        </div>
+        <div class="image-box">
+            <img src="image3.jpg" alt="Image 3">
+            <p class="image-title">Title 3</p>
+        </div>
+    </div>
             </div>
+            
         </section>
 
         <section class="work">
-            <h2>The brands I have worked with.</h2>
+            <h3>The brands I have worked with.</h3>
 
 
             <div class="work-category" id="ugc">
