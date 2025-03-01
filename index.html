@@ -15,22 +15,23 @@
 
 
 
-     <style>
+        <style>
+        /* Container for images */
         .image-container {
             display: flex;
             justify-content: center;
             gap: 20px; /* Space between images */
             padding: 20px;
-            flex-wrap: wrap; /* Allows wrapping for smaller screens */
+            flex-wrap: nowrap; /* Keeps images in one line on large screens */
         }
+
         .image-box {
             text-align: center; /* Centers title below the image */
-            flex: 1; /* Makes each item flexible */
-            min-width: 300px; /* Ensures a minimum width for smaller screens */
         }
+
         .image-box img {
-            width: 400px; /* Makes image responsive */
-            max-width: auto; /* Ensures proper scaling */
+            width: 100%; /* Makes image responsive */
+            max-width: 400px; /* Ensures proper scaling */
             height: auto; /* Maintains aspect ratio */
             object-fit: contain; /* Prevents pixelation */
             border-radius: 10px; /* Optional: Rounded corners */
@@ -38,11 +39,12 @@
             display: block;
             margin: 0 auto; /* Centers the image */
         }
+
         .image-title {
             margin-top: 10px; /* Space between image and title */
             font-size: 16px;
             font-weight: bold;
-            color: #FFFFFF; /* Adjust color as needed */
+            color: #333; /* Adjust color as needed */
         }
 
         /* Responsive Design for Mobile */
@@ -50,9 +52,6 @@
             .image-container {
                 flex-direction: column; /* Stack images vertically */
                 align-items: center; /* Center content */
-            }
-            .image-box {
-                width: 100%; /* Full width on mobile */
             }
         }
     </style>
