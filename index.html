@@ -26,9 +26,9 @@
             text-align: center; /* Centers title below image */
         }
         .image-box img {
-            width: 300px; /* Adjust width */
-            height: 300px; /* Adjust height */
-            object-fit: cover; /* Ensures the image fits properly */
+            width: 400px; /* Adjust width while maintaining aspect ratio */
+            height: auto; /* Automatically calculate height to maintain 22:17 ratio */
+            object-fit: contain; /* Ensures the whole image fits without cropping */
             border-radius: 10px; /* Optional: Rounded corners */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Shadow effect */
             display: block;
